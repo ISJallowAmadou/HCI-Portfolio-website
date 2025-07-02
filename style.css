@@ -504,3 +504,41 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+
+
+/* Light mode styles */
+.light-theme {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.light-theme nav,
+.light-theme footer,
+.light-theme .customize-panel {
+  background: #f1f1f1;
+  color: #111;
+}
+
+.light-theme .about-box,
+.light-theme .hero-glass,
+.light-theme .blog-card,
+.light-theme .project {
+  background: #fefefe;
+  color: #111;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.light-theme a {
+  color: #0077cc;
+}
+
+.light-theme .btn,
+.light-theme form button {
+  background: #0077cc;
+  color: white;
+}
+
+.light-theme .site-logo {
+  box-shadow: none;
+}

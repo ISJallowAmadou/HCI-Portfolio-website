@@ -31,15 +31,19 @@ hamburger.addEventListener("click", () => {
 
 // Font size selector
 const fontSizeSelector = document.getElementById("fontSizeSelector");
-fontSizeSelector.addEventListener("change", (e) => {
-  document.body.style.fontSize = e.target.value;
-});
+    if (fontSizeSelector) {
+      fontSizeSelector.addEventListener("change", (e) => {
+        document.body.style.fontSize = e.target.value;
+      });
+    }
 
 // Theme toggle
 const toggleTheme = document.getElementById("toggleTheme");
-toggleTheme.addEventListener("click", () => {
-  document.body.classList.toggle("light-theme");
-});
+    if (toggleTheme) {
+      toggleTheme.addEventListener("click", () => {
+        document.body.classList.toggle("light-theme");
+      });
+    }
 
 // Optional light theme styles
 const styleTag = document.createElement("style");
