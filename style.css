@@ -21,7 +21,13 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-  
+
+  .hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #00d1b2;
+  cursor: pointer;
+  }
   nav h1 {
     color: #00d1b2;
   }
@@ -443,13 +449,6 @@ body {
   }
 }
 
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: #00d1b2;
-  cursor: pointer;
-}
-
 
 @media (max-width: 768px) {
   .hamburger {
@@ -482,11 +481,15 @@ body {
 .customize-panel {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   padding: 1rem;
   background: #1a1d2b;
   color: #e0e0e0;
   font-size: 0.9rem;
+  max-width: 800px;
+  margin: auto; /* centers the panel */
+  border-radius: 10px;
 }
 
 .customize-panel select,
