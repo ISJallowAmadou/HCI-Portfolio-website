@@ -20,14 +20,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+  /*  text-align: right;*/
   }
 
   .hamburger {
-  display: none;
-  font-size: 2rem;
-  color: #00d1b2;
-  cursor: pointer;
-  }
+    display: none;
+    font-size: 2rem;
+    color: #00d1b2;
+    cursor: pointer;
+    }
   nav h1 {
     color: #00d1b2;
   }
@@ -455,27 +457,28 @@ body {
     display: block;
   }
 
-  nav ul {
+  #nav-menu {
     display: none;
     flex-direction: column;
     background: #1f2333;
     position: absolute;
-    top: 60px;
+    top: 100%;
     right: 0;
     width: 100%;
     padding: 1rem;
     z-index: 99;
+    border-top: 1px solid #00d1b2;
   }
 
-  nav ul.show {
+  #nav-menu.show {
     display: flex;
   }
 
-  nav ul li {
+  #nav-menu li {
     margin-bottom: 1rem;
+    text-align: right;
   }
 }
-
 
 
 .customize-panel {
