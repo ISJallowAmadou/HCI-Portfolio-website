@@ -9,12 +9,12 @@
 <body>
   <header>
     <nav>
-        <div class="logo-box">
-            <img src="logo.jpg" alt="Logo" class="site-logo" />
-            <h1>FantasistaGraphics</h1>
-          </div>
-          
-      <ul>
+      <div class="logo-box">
+        <img src="logo.jpg" alt="Logo" class="site-logo" />
+        <h1>FantasistaDesign</h1>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <ul id="nav-menu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -22,6 +22,20 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
+    <div class="customize-panel">
+      <label>
+        Font Size:
+        <select id="fontSizeSelector">
+          <option value="100%">Default</option>
+          <option value="110%">Large</option>
+          <option value="120%">Extra Large</option>
+        </select>
+      </label>
+
+      <button id="toggleTheme">Toggle Dark/Light Mode</button>
+    </div>
+
   </header>
 
   <section class="hero-container">

@@ -398,3 +398,103 @@ body {
   }
   
   
+
+
+
+  /* Responsive Layouts */
+
+/* Tablets */
+@media (max-width: 991px) {
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .logo-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .site-logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .btn, form button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .hero-glass h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-glass p {
+    font-size: 1rem;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #00d1b2;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #1f2333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 99;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+.customize-panel {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #1a1d2b;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.customize-panel select,
+.customize-panel button {
+  padding: 0.4rem;
+  background: #0f111a;
+  color: #00d1b2;
+  border: 1px solid #00d1b2;
+  border-radius: 5px;
+  cursor: pointer;
+}
